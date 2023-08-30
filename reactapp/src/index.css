@@ -2,72 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.btn {
+    @apply text-white text-[0.9375rem] tracking-wide uppercase w-auto font-bold py-2 px-3 flex items-center gap-2 bg-buttonPurple rounded-lg hover:bg-hoverPurple
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.btn-two {
+    @apply text-white text-[0.9375rem] tracking-wide uppercase w-auto font-bold py-4 px-6 flex items-center bg-buttonPurple rounded-lg hover:bg-hoverPurple
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.btn-edit {
+    @apply text-greyText dark:text-buttonHoverLight text-[0.9375rem] tracking-wide uppercase w-auto font-bold py-4 px-6 flex items-center bg-editlight dark:bg-editDark rounded-lg hover:bg-buttonHoverLight dark:hover:bg-white
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.btn-four {
+    @apply text-[#888EB0] text-[0.9375rem] tracking-wide uppercase w-auto font-bold py-4 px-6 flex items-center bg-buttonGrey dark:text-buttonHoverLight rounded-lg hover:bg-buttonHover dark:hover:bg-[#1E2139]
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.btn-delete {
+    @apply text-white text-[0.9375rem] tracking-wide uppercase w-auto font-bold py-4 px-6 flex items-center bg-redDelete rounded-lg hover:bg-redDeleteHover
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.btn-item-add {
+    @apply text-greyText block text-[0.9375rem] w-80 tracking-wide uppercase text-center font-bold py-4 px-6 bg-editlight rounded-lg hover:bg-buttonHoverLight
+}
+
+
+.txt-field-container {
+    @apply flex flex-col items-start w-full gap-2
+}
+
+.form-labels {
+    @apply text-sm font-medium text-greyText
+}
+
+.form-txt-input {
+    @apply border-solid active:border-hoverPurple border-buttonHoverLight rounded border-1 w-full bg-white dark:bg-bgInputDark dark:border-[#252945] p-4 dark:text-white text-base font-bold
 }
